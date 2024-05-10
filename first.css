@@ -1,0 +1,238 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,html{
+    height: 100%;
+    width:100%;
+    margin: 0;
+}
+/*main div started here*/
+#main{
+    display: flex;
+    width:100%;
+    height:100%;
+    background-color: rgb(159, 157, 161);
+    overflow: hidden;
+}
+#mtext{
+    position: absolute;
+    top:50%;
+    left:45%;
+    transform: translate(-50%, -55%);
+    -webkit-transform: translate(-50%, -45%);
+    -moz-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    -o-transform: translate(-50%, -55%);
+    z-index: 999;
+}
+#mtext h1{
+    user-select: none;
+    white-space: nowrap;
+    font-family: DejaVu Sans Mono;
+    font-size: 9vw;
+    font-weight: 50;
+    color:white;
+    line-height: 1;
+}
+#mtext h3{
+    user-select: none;
+    white-space: nowrap;
+    font-family: DejaVu Sans Mono;
+    font-size: 4vw;
+    font-weight: 50;
+    color:white;
+    line-height: 1;
+}
+/*main div ended  here*/
+
+/*left div staterd here*/
+#left{
+    position: relative;
+    width:45%;
+    height:100%;
+    background-color: rgb(73, 97, 73);
+}
+#centerimg{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50% , -50%);
+    width:40%;
+    height:50%;
+   background-image:  url("https://img.freepik.com/premium-photo/blue-dream-muslim-woman-amid-holi-explosion_1078219-3372.jpg?w=360");
+    -webkit-transform: translate(-50% , -50%);
+    -moz-transform: translate(-50% , -50%);
+    -ms-transform: translate(-50% , -50%);
+    -o-transform: translate(-50% , -50%);
+    background-size: cover;
+   background-position: bottom;
+}
+#centerimg #text{
+    position: absolute;
+   top:110%;
+    width: 100%;
+    height:10px;
+    display: flex;
+}
+#text #parts{
+    width:25%;
+ 
+    height:20px;
+}
+#parts h5{
+    margin-bottom: 20px;
+    color:white;
+    font-weight: 300px;
+}
+#text #para{
+    width:75%;
+   
+    height:20px;
+}
+#para p{
+   font-size: 12px;
+   color:white;
+   line-height: 18px;
+   font-family: 'Courier New', Courier, monospace;
+   font-weight: 700px;
+}
+#nav{
+    display: flex;
+    color:white;
+    width: 100%;
+    background-color: black;
+    padding:50px 60px;
+    gap:100px;
+    font-size: 12px;
+    align-items: center;
+
+}
+#nav h3{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 750;
+    font-size: 16px;
+    letter-spacing: 4px;
+}
+#nav a {
+    text-decoration: none;
+    color: white;
+}
+#scroll {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 0%;
+    left:10%;
+    gap:20px;
+    transform-origin: 0% 50%;
+    transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+}
+#scroll h4{
+    font-weight: 400;
+    color: white;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-size:12px ;
+}
+
+#scroll #line{
+    width:150px;
+    height:2px;
+    background-color: white;
+}
+/*left div ended  here*/
+
+/*center div staterd here*/
+#center{
+    width:45%;
+    height:100%;
+    background-image: url("https://img.freepik.com/premium-photo/walking-male-person-sihouette-illustration-side-view_1029476-187246.jpg?w=360");
+    background-size: cover;
+    position: relative;
+}
+#center #card{
+    position:absolute;
+    width:240px;
+    height: 150px;
+    background-color: brown;
+    right:-14%;
+    bottom:10%;
+    display: flex;
+}
+#cicons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width:18%;
+    height:100%;
+    background-color: white;
+    
+    
+}
+#cimages{
+    
+    width: 90%;
+    height:100%;
+    background-image: url("https://img.freepik.com/free-photo/medium-shot-anime-couple-hugging_23-2150970831.jpg?t=st=1714809858~exp=1714813458~hmac=1ae36bc60e1687d53b45966de12bef61cabe45d15286a2795a897f653bdbd014&w=826");
+    background-size: cover;
+}
+/*center div ended  here*/
+
+
+/*right div staterd here*/
+#right{
+    width:10%;
+    height:100%;
+    background-color: rgb(32, 81, 32);
+    
+   
+}
+
+#relm{
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+
+    height: 70%;
+    transform:rotate(-90deg);
+    -webkit-transform:rotate(-270deg);
+    -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+    align-items: center;
+}
+#relm #rsearch{
+    display: flex;
+    flex-direction:row;
+    color:white;
+    gap:10px;
+
+}
+#rlinks{
+    display: flex;
+    flex-direction: row;
+    bottom:40%;
+    justify-content: space-between;
+    text-decoration: none;
+     gap:10px;
+    align-items: center;
+
+    
+}
+#rlinks a {
+    color: aliceblue;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-betwee;
+    gap: 10px;
+}
